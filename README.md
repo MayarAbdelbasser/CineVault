@@ -1,16 +1,32 @@
-# React + Vite
+# 🎬 CineVault
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**CineVault** is a modern movie discovery website built with **React**, **CSS**, and **Font Awesome**.  
+It offers a sleek and responsive interface for exploring featured films, browsing by genre, and discovering timeless cinema classics.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## React Compiler
+- 🎥 **Featured Movies Section** – Highlights top-rated and trending films.
+- 🧭 **Smooth Navigation** – Home, About, and Start Watching sections.
+- 🎭 **Genre Filtering** – Explore movies by category like Fantasy, Drama, and more.
+- 💻 **Responsive Design** – Fully optimized for all screen sizes.
+- 🎨 **Font Awesome Icons** – Clean, modern icons for a polished UI.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js** – Frontend framework
+- **CSS** – Styling and layout
+- **Font Awesome** – Icons and visual elements
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git https://github.com/MayarAbdelbasser/CineVault
+```
