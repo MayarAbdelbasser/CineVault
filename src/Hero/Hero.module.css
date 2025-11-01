@@ -1,12 +1,7 @@
 .hero {
   margin-top: 5.4em;
   background-color: var(--bgColor);
-  background: linear-gradient(
-      135deg,
-      var(--nav-color),
-      var(--nav-color),
-      #1b233630
-    ),
+  background: linear-gradient(135deg, var(--nav-color), #1b233630),
     url("../assets/cinema.jpg"); /* your image path */
   padding: 5em;
   background-size: cover;
