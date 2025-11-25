@@ -69,7 +69,7 @@ const mediaList = [
     year: 2003,
     genre: "Fantasy",
     rating: 9.0,
-    img: "https://upload.wikimedia.org/wikipedia/en/4/48/Lord_Rings_Return_King.jpg",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtOPuZhtBLJLonNoWuhRdheobIHrgNVEgQXw&s",
   },
 
   {
