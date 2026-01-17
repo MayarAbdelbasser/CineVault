@@ -1,0 +1,40 @@
+.hero {
+  margin-top: 5em;
+  background-color: var(--bgColor);
+  background: linear-gradient(135deg, var(--nav-color), #1b233630),
+    url("https://images.pexels.com/photos/7991489/pexels-photo-7991489.jpeg");
+  padding: 5em 0 5em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80dvh;
+
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+  }
+
+  .heroMovieName {
+    font-size: 3rem;
+    color: var(--white);
+  }
+
+  .heroMovieFeature {
+    color: var(--primary1);
+    border: 1px solid var(--primary1);
+    padding: 1em;
+    width: fit-content;
+    font-size: 0.8rem;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+  }
+
+  .heroMovieDescription {
+    color: var(--grey);
+    font-size: 1.25rem;
+    line-height: 1.5em;
+  }
+}

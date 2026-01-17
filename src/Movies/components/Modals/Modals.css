@@ -1,0 +1,144 @@
+.delete,
+.remove {
+  position: fixed;
+  color: var(--white);
+  border: 1px solid var(--grey);
+  background-color: #121b28;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+  .delete__heading {
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+  .delete__btns {
+    display: flex;
+    gap: 1em;
+  }
+
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.popup__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.add {
+  background-color: #121b28;
+  min-width: 50%;
+  padding: 1.5em;
+  .add__btns {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.6em;
+    label {
+      color: #d1d5dc;
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+    input,
+    textarea,
+    .form__genres {
+      margin-top: 0.5em;
+      resize: none;
+      background-color: #0a0f1a;
+      color: var(--white);
+      border: 1px solid var(--grey);
+      width: 100%;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+
+      &::placeholder {
+        font-size: 1em;
+        color: var(--grey);
+      }
+    }
+    input,
+    textarea {
+      padding: 0.8em;
+    }
+
+    .message--input {
+      height: 80px;
+    }
+
+    .form__input {
+      min-height: 87.025px;
+    }
+    .form__textarea {
+      min-height: 128.812px;
+    }
+    .form__error {
+      color: #ed4337;
+      font-size: 0.8rem;
+      margin-top: 0.4em;
+    }
+    .error {
+      color: #ed4337;
+      font-size: 0.8rem;
+      margin-top: 0.1em;
+    }
+  }
+
+  .form__genres {
+    padding: 0.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.1em;
+  }
+  .option {
+    font-size: 0.8em;
+    padding: 8px 12px;
+    background: #121b28;
+    color: var(--white);
+    cursor: pointer;
+  }
+  .option:hover {
+    background-color: var(--primary1);
+  }
+  .option.selected {
+    background: var(--grey);
+    color: white;
+  }
+  .genres {
+    min-height: 262.237px;
+  }
+  .checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 0.5em;
+    justify-content: start;
+    input {
+      width: fit-content;
+      margin-top: 0;
+      accent-color: var(--primary1);
+      cursor: pointer;
+    }
+    label {
+      cursor: pointer;
+    }
+  }
+}
