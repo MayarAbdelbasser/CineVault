@@ -1,0 +1,28 @@
+.pagination {
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2em;
+  font-size: 1.2em;
+  svg,
+  span {
+    width: 30px;
+    height: 30px;
+  }
+  span {
+    background-color: var(--white);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  span.disabled {
+    pointer-events: none;
+    color: var(--grey);
+  }
+}

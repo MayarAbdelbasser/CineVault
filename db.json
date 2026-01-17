@@ -49,15 +49,15 @@
       "inTheaters": false
     },
     {
-      "id": "3212",
       "name": "A Working Man",
-      "description": "Levon Cade left his profession behind to work construction and be a good dad to his daughter. But when a local girl vanishes, he's asked to return to the skills that made him a mythic figure in the shadowy world of counter-terrorism.",
+      "description": "Levon Cade left his profession behind to work construction and be a good dad to his daughter..",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScmb1SeRg9Z_SM3WUdERJnmyXIAyBcizyzeF9h9CM-nJxsYgZjBSxKsl3HA1ib4D8kluRfGJwBBw57y9zy8FbS0JF10zAuxsJDZcIf8yu1&s=10",
-      "theatres": false,
       "genres": [
         "Action"
       ],
-      "rating": 0
+      "theatres": false,
+      "rating": 0,
+      "id": "3212"
     },
     {
       "id": "b1f1",

@@ -3,6 +3,7 @@ import styles from "./Movies.module.css";
 import MovieCard from "./components/MovieCard/MovieCard";
 import RemoveRatingsModal from "./components/Modals/RemoveRatingsModal";
 import AddMovieModal from "./components/Modals/AddMovieModal";
+import Pagination from "./components/Pagination/Pagination";
 
 function Movies() {
   const [movies, setMovies] = useState([]);
@@ -10,6 +11,8 @@ function Movies() {
   const [showRemove, setShowRemove] = useState(false);
   const [removed, setRemoved] = useState();
   const [showAdd, setShowAdd] = useState(false);
+  const [page, setPage] = useState(1);
+  const [limit, setLimit] = useState(3);
 
   const getAllMovies = async () => {
     const res = await fetch("http://localhost:3000/movies");
@@ -114,8 +117,26 @@ function Movies() {
           </select>
         </div>
       </div>
+      {/* movies list */}
       <div className={styles.movies__list}>
-        {filteredData.length > 0 ? (
+        {filteredData
+          .slice((page - 1) * limit, (page - 1) * limit + limit)
+          .map((movie) => {
+            return (
+              <MovieCard
+                imgSrc={movie.image}
+                name={movie.name}
+                genres={movie.genres}
+                description={movie.description}
+                rating={movie.rating}
+                movieId={movie.id}
+                getAllMovies={getAllMovies}
+                removed={removed}
+                movie={movie}
+              />
+            );
+          })}
+        {/* {filteredData.length > 0 ? (
           filteredData.map((movie) => {
             return (
               <MovieCard
@@ -133,7 +154,18 @@ function Movies() {
           })
         ) : (
           <p className={styles.empty}>No movies to show</p>
-        )}
+        )} */}
+      </div>
+      <div>
+        {
+          <Pagination
+            movies={filteredData}
+            page={page}
+            setPage={setPage}
+            limit={limit}
+            setLimit={setLimit}
+          />
+        }
       </div>
     </div>
   );
